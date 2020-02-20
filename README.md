@@ -1,0 +1,5 @@
+# CP2-LearningMachinePractice
+
+In class, we went over the homework and discussed how one might implement PeoplePong (aka YOPO) using the [YOLO detector](https://editor.p5js.org/ml5/sketches/K_R2cZsR8Wu) and person objects. In workshop, some of you experimented with other ML models like [PoseNet](https://editor.p5js.org/ml5/sketches/K_R2cZsR8Wu) that tracks people in a scene and where their major mobile body parts are (eyes, ears, nose, torso, arms, legs, wrists, elbows, knees, and ankles).
+
+For this week's **assignment**, I'd like you to complete your in-class group project of Pong using visual input of a human body. Use YOLO or PoseNet (or another model!) to track people and use that tracking data to control the paddles (and other stuff?) in-game. Upload your code to GitHub, and also publish your work through the p5js editor by emailing me a link to your project: click the **share** option in the p5.js web editor's File menu and [email me](mailto:zamfi@cca.edu) the "Edit" link as well as the GitHub link. (Make sure to note who contributed what in the `Readme.md` file.)
