@@ -10,6 +10,3 @@
    
  - **Challenge**: Instead of counting, just show a list of the 10 most recent classified objects.
  
-As always, upload your code to GitHub and [email it to us](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) -- and please reach out by email or on Slack if you're stuck!
-
-Bring your objects to class so you can demo your code!
