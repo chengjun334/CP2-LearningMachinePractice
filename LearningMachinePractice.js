@@ -119,10 +119,17 @@ function draw() {
   if (label == "Empty") {
     switchState=1
   }
-  if (label == "Paper" && switchState==1){
+  
+   if (label == "Rock") {
+    switchState=1
+  }
+  
+    if (label == "Paper" && switchState==1){
+      paperTimes+=1
+      switchState=0
+    }
+  if (label == "Paper" ){
     vleftPaddle = vrightPaddle = 1;
-    paperTimes+=1
-    switchState=0
   } else {
     vleftPaddle = vrightPaddle = -1;
   }
