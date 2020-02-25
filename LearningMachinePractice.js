@@ -71,21 +71,22 @@ function draw() {
   textAlign(CENTER);
   text(label, width / 2, height - 4);
   text(paperTimes, 20, height - 4);
-  rect(20, leftPaddle, 10, 50);
-  rect(width-20, rightPaddle, 10, 50);
+  text(rockTimes, width-20, height - 4);
+//  rect(20, leftPaddle, 10, 50);
+//  rect(width-20, rightPaddle, 10, 50);
   
-  ellipse(x, y, 20);
+//  ellipse(x, y, 20);
   
-  push();
-  noStroke();
-  fill(0, 255, 0);
-  textAlign(CENTER, CENTER);
-  text("Score", 50, 20);
-  text(leftScore, 50 + 30, 20)
+//   push();
+//   noStroke();
+//   fill(0, 255, 0);
+//   textAlign(CENTER, CENTER);
+//   text("Score", 50, 20);
+//   text(leftScore, 50 + 30, 20)
 
-  text("score", width - 50, 20);
-  text(rightScore, width - 50 + 30, 20)
-  pop();
+//   text("score", width - 50, 20);
+//   text(rightScore, width - 50 + 30, 20)
+//   pop();
   
 
   
@@ -116,23 +117,23 @@ function draw() {
   leftPaddle = constrain(leftPaddle + vleftPaddle, 25, height-25);
   rightPaddle = constrain(rightPaddle + vrightPaddle, 25, height-25);
   
-  if (label == "Empty") {
-    switchState=1
-  }
-  
-   if (label == "Rock") {
-    switchState=1
-  }
-  
-    if (label == "Paper" && switchState==1){
-      paperTimes+=1
-      switchState=0
+   if (label == "Paper") {
+      if (switchState==0){
+      paperTimes++;
+      switchState=1;
     }
-  if (label == "Paper" ){
-    vleftPaddle = vrightPaddle = 1;
-  } else {
-    vleftPaddle = vrightPaddle = -1;
+   }else if (label ==  "Rock") {
+     if (switchState==0){
+       rockTimes++;
+    switchState=1;
   }
+   }
+   if (label == "Empty") {
+    switchState=0
+  }
+  
+   
+  
 }
 
 // Get a prediction for the current video frame
